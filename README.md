@@ -17,6 +17,8 @@ Viewstamped Replication is a replication protocol for distributed systems and us
 
 The ensemble or cluster is made of replica nodes. Each replica is composed of the following parts - 
 
+![Anatomy](./Reference_Material/anatomy.png)
+
 1. **Op-Log:** It consists of a sequence of operations . Operations in Op-Log must be deterministic and idempotent. Each operation in the operation-log has a positional identifier which is a monotonically increasing number.
 2. **Op-num:** It represents the lsequence number of the latest operation added to the log.
 Note:Operations in the (Op-Log) are appended first, then shared with other replicas and once there is a confirmation that enough replicas have received the operation then it is actually executed.
