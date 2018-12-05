@@ -13,9 +13,9 @@
 
 ### Reference Materials
 
-- Viewstamped Replication - Orignal (1988)
-- Viewstamped Replication - Revisited (2012)
-- Viewstamped Replication Explained
+- [Viewstamped Replication - Orignal (1988)] (./Reference_Material/viewstamped-replication.pdf)
+- [Viewstamped Replication - Revisited (2012)] (./Reference_Material/viewstamped-replication-explained.pdf)
+- [Viewstamped Replication Explained] (./Reference_Material/viewstamped-replication-explained.pdf)
 
 ### Reference Links
 
