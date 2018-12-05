@@ -1,7 +1,5 @@
 # Viewstamped Replication
 
-### ![Presentation] (Viewstamp_Replication_Presentation.pdf)
-
 ### Team Members
 
 - Ajinkya Thakare
