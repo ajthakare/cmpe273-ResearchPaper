@@ -15,7 +15,7 @@
 
 - [Viewstamped Replication - Orignal (1988)] (./Reference_Material/viewstamped-replication.pdf)
 - [Viewstamped Replication - Revisited (2012)] (./Reference_Material/viewstamped-replication-explained.pdf)
-- [Viewstamped Replication Explained] (./Reference_Material/viewstamped-replication-explained.pdf)
+- [Viewstamped Replication Explained] (https://github.com/ajthakare/cmpe273-ResearchPaper/blob/master/Reference_Material/viewstamped-replication-explained.pdf)
 
 ### Reference Links
 
