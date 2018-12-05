@@ -29,7 +29,16 @@ Note:Operations in the (Op-Log) are appended first, then shared with other repli
 
 #### Client Request Handling
 
+The Viewstamped Replication protocol ensures that at least a quorum of replicas acknowledges the request before executing it. Following steps are followed for client request handling and data replication - 
 
+1. Client send a message request with a client-id, request number and operation to be performed.
+2. Primary check if request number is greater than previous one. If request number is greater, primary increment the op-number, append the operation in op-log and subsequently update the client table. Then it sends a prepare message to all the replicas.
+3. Replica checks for the view-num. If message view-num is not equal to their view-num, then a new primary is elected and according to who is behind, state transition takes place. If view-num is equal, the op-num is incremented, the operation is appended in op-log and client table is updated. Now replica send prepare-ok message back to primary.
+4. When primary receive minimum f+1 prepare-ok message, it commits the operation, increment the commit-num and send a reply response to client.
+5. When new client or same client with a new request send message to primary, the whole process takes place again, but this time commit-num is incremented in all the replicas. Hence operation is also committed in the replicas.
+6. When system is experiencing downtime, primary sends a commit message to all the replicas. The commit message contains the view-num and commit-num. 
+
+The prepare message and commit message act as heartbeat for primary. If replica doesn't receive these message for so long, they get to know that primary is dead and they do a primary election. This process of primary election is called view-change.
 
 #### View change protocol:
 
