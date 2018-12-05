@@ -1,6 +1,6 @@
 # Viewstamped Replication
 
-### [Presentation] (Viewstamp_Replication_Presentation.pdf)
+### ![Presentation] (Viewstamp_Replication_Presentation.pdf)
 
 ### Team Members
 
