@@ -15,7 +15,17 @@ Viewstamped Replication is a replication protocol for distributed systems and us
 
 #### Anatomy
 
+The ensemble or cluster is made of replica nodes. Each replica is composed of the following parts - 
 
+1-Operation log (Op-Log):It consists of a sequence of operations . Operations in Op-Log must be deterministic and idempotent. Each operation in the operation-log has a positional identifier which is a monotonically increasing number.
+2-Op-num: It represents the lsequence number of the latest operation added to the log.
+Note:Operations in the (Op-Log) are appended first, then shared with other replicas and once there is a confirmation that enough replicas have received the operation then it is actually executed.
+3-Commit-Num: It represents the number of the last operation which was executed in the replica. 
+4-View-num: It identifies how many times the primary replica has changed in an ensemble. It increases by 1 everythime a new primary replica is assigned in a cluster .
+5-Primary field:It represnts the primary replica in the cluster.
+6-The status field shows the current replica operation mode.
+7-Config field:It contains the list of all the replica nodes in the ensemble with their IP addresses and their unique identifiers.
+8-Client-table: It keeps track of client’s requests. Clients are identified by a unique id, and each client can only make one request at the time.This ensures that the clients can re-issue the last request without the risk of duplication in the system.
 
 #### Client Request Handling
 
