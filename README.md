@@ -57,6 +57,48 @@ Steps followed for view change:
 
 This is how the simple Viewstamped Replication protocol handles primary change.
 
+### Contributions by Team Members
+
+##### Ajinkya Thakare
+
+- Explored and explained introduction of Viewstamped Replication protocol
+- Explained fault-tolerance handling in the protocol and it's limitations in real world scenarios
+- Researched the uses of protocol in distributed applications
+- Played an active role in Q&A session after presentation
+
+##### Akshay Jaiswal
+
+- Researched the purpose and workings of the view change protocol in Viewstamped replication.
+- Understood and explained view change protocol with a simple example.
+- During the presentation explained the following points:
+i. Need of view change.
+ii. Why view change happens.
+iii. How a new leader is elected
+iv. How the view change happens.
+v. Result of view change.
+- Actively participated in Q&A session during presentation
+
+##### Sarthak Sinhgal
+
+- Researched the structure of replica node in an ensemble/cluster
+- During the presentation, discussed the anatomy of replica and explained the following components -
+i. Op-Log
+ii. Op-num
+iii. Commit-Num
+iv. View-num
+v. Primary field
+vi. Status
+vii. Config field
+viii. Client-table
+- Played an active role in Q&A session after presentation
+
+##### Shashank Singh
+
+- Understood and explained the normal functioning of Viewstamped Replication protocol
+- Explained the process of client's request handling by primary and how primary forwards the request to and accepts replies back from replicas.
+- Explained heartbeat detection in the system.
+- Actively participated in the Q&A session during presentation
+
 ### Reference Materials
 
 - Viewstamped Replication - Orignal (1988) [link here](./Reference_Material/viewstamped-replication.pdf)
