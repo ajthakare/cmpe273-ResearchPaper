@@ -70,26 +70,27 @@ This is how the simple Viewstamped Replication protocol handles primary change.
 
 - Researched the purpose and workings of the view change protocol in Viewstamped replication.
 - Understood and explained view change protocol with a simple example.
-- During the presentation explained the following points:
-i. Need of view change.
-ii. Why view change happens.
-iii. How a new leader is elected
-iv. How the view change happens.
-v. Result of view change.
+- During the presentation explained the following points -
+1. Need of view change.
+2. Why view change happens.
+3. How a new leader is elected
+4. How the view change happens.
+5. Result of view change.
 - Actively participated in Q&A session during presentation
 
 ##### Sarthak Sinhgal
 
 - Researched the structure of replica node in an ensemble/cluster
 - During the presentation, discussed the anatomy of replica and explained the following components -
-i. Op-Log
-ii. Op-num
-iii. Commit-Num
-iv. View-num
-v. Primary field
-vi. Status
-vii. Config field
-viii. Client-table
+1. Op-Log
+2. Op-num
+3. Commit-Num
+4. View-num
+5. Primary field
+6. Status
+7. Config field
+8. Client-table
+- Explained the characteristics of the operations and approval process from the nodes in ensemble
 - Played an active role in Q&A session after presentation
 
 ##### Shashank Singh
